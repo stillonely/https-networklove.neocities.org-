@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html Lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Doto:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+ <style>
+body { 
+  background: linear-gradient(0deg,rgba(155, 42, 127, 0) 0%, rgba(0, 0, 0, 0.485) 100%), url("https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/me/NL_txtbg2.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom center;
+}
+.wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 5em auto;
+  width: 1000px;
+  height: 760px;
+  display: flex; 
+  flex-direction: row;
+}
+.main{
+   display: flex;
+   flex: 1;
+}
+.left{
+   background-image: url("https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/me/paper.jpeg"); 
+   background-repeat: repeat-y;
+   background-size: 100%;
+   padding: 1%;
+   width: 50%;
+   height: 760px;
+   flex-direction: column;
+   margin: 0;
+}
+.middle{
+   background: transparent; 
+   padding: 2%;
+   width: 53%;
+}
+.right{
+    background: rgb(73,72,101);
+    background: linear-gradient(180deg, rgba(73,72,101,1) 0%, rgba(232,232,232,0) 100%);
+    background-image: url();
+    background-position: center;
+    background-repeat: repeat-x;
+    padding: 0 0 0 0;
+    flex-direction: column;
+    width: 50%;
+}
+footer{
+  background: rgb(246,149,187);
+  background: linear-gradient(0deg, rgba(246,149,187,1) 50%, rgba(237,109,160,1) 100%); 
+  padding: 1em 0 1em 0;
+  text-align: center;
+  color: black;
+  font-family: 'MartianMono-Regular';
+}
+.topheader {
+  height: 25px;
+  width: 100%;
+}
+.divider {
+  height: 0px;
+}
+p {
+  font-family: 'MartianMono-Regular';
+  font-size: 10px;
+  color: black;
+}
+b {
+  font-weight: bold;
+  font-family: 'Sixtyfour';
+  font-size: 10px;
+  color:#333750;
+  letter-spacing: 0.2px;
+}
+a {
+  color: black;
+  text-decoration: underline 0.2px wavy;
+  filter: drop-shadow(0.5px 0.5px 3px white) drop-shadow(0.5px 0.5px 3px white);
+}
+a:hover {
+  font-style: italic;
+  color: #dc5fbf;
+  letter-spacing: 5px;
+  text-decoration: none;
+}
+th {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  color: #bd0067;
+  padding: 8px;
+  font-family: 'Arial';
+  text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	background: rgb(246,149,187);
+  background: linear-gradient(180deg, rgba(246,149,187,1) 47%, rgba(237,109,160,1) 56%);
+  border: 1.5px solid #acacac;
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 255px; 
+  width: 530px;
+  scrollbar-width: thin;
+  scrollbar-color: #8583B8 black;
+  background: transparent;
+}
+.scrolltext {
+  border-radius: 5px;
+  overflow: auto;
+  padding: 5px;
+  scrollbar-width: thin;
+  scrollbar-color: #8583B8 black;
+  background: white;
+  border: 2px inset #acacac;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.idbox {
+  width: 540px;
+  height: 300px;
+  margin: 550px 0 0 100px;
+  background-image: url("https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/me/idcardbg.png");
+  position: absolute;
+  transform: rotate(-3deg);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#fba7ba', endColorstr='#e64e92');
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+  box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.idtext {
+  font-size: 16px;
+  font-family: 'Courier New', monospace;
+  line-height: 33px;
+  letter-spacing: -1px;
+  font-weight: bold;
+  color:rgb(209, 209, 209);
+}
+.idpen {
+  font-family: 'only_youregular';
+  font-size: 29px;
+  margin: 0 0 0 -5px;
+  text-align: center;
+  letter-spacing: -1px;
+  display: inline-block;
+  text-decoration: underline dotted;
+  text-decoration-skip-ink: none;
+}
+.text {
+ color: black;
+ text-align: justify;
+ font-family: 'MartianMono-Regular';
+ line-height: 12px;
+}
+h1 {
+  color: #4c4f5b;
+  margin: 0 auto;
+  width: 20%;
+  height: 10%;
+  position: absolute;
+  padding: 12px;
+  font-size: 45px;
+  line-height: 35px;
+  text-align: center;
+  font-family: 'only_youregular';
+}
+.floatingpic {
+ position: absolute;
+ margin-top: 150px;
+ margin-left: -113px; 
+ transform: rotate(5deg);
+}
+.homebutton {
+ position: absolute;
+ margin-top: 150px;
+ margin-left: -113px; 
+ transform: rotate(2deg);
+}
+.homebutton:hover {
+  scale: 110%;
+  margin-top: 150px;
+  margin-left: -105px; 
+   filter: drop-shadow(2px 2px 4px grey);
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+ <div class="topheader">
+    <div class="container" style="width: 100%; height: 25px;">
+<marquee behavior=scroll direction="left" scrollamount="7">
+  <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/me/Tiny-Identity-Buttons/1" style="width:95px; height:20px;">
+  <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/me/Tiny-Identity-Buttons/2" style="width:95px; height:20px;">
+  <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/me/Tiny-Identity-Buttons/3" style="width:95px; height:20px;">
+  <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/me/Tiny-Identity-Buttons/4" style="width:95px; height:20px;">
+  <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/me/Tiny-Identity-Buttons/5" style="width:95px; height:20px;">
+  <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/me/Tiny-Identity-Buttons/6" style="width:95px; height:20px;">
+  <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/me/Tiny-Identity-Buttons/7" style="width:95px; height:20px;">
+  <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/me/Tiny-Identity-Buttons/71"style="width:95px; height:20px;">
+  <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/me/Tiny-Identity-Buttons/8" style="width:95px; height:20px;">
+  <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/me/Tiny-Identity-Buttons/9" style="width:95px; height:20px;">
+  <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/me/Tiny-Identity-Buttons/91"style="width:95px; height:20px;">
+  <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/me/Tiny-Identity-Buttons/92" style="width:95px; height:20px;">
+  <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/me/Tiny-Identity-Buttons/93"style="width:95px; height:20px;">
+  <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/me/Tiny-Identity-Buttons/94"style="width:95px; height:20px;">
+  <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/me/Tiny-Identity-Buttons/95" style="width:95px; height:20px;">
+  <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/me/Tiny-Identity-Buttons/951-1" style="width:95px; height:20px;">
+  <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/me/Tiny-Identity-Buttons/951" style="width:95px; height:20px;">
+  <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/me/Tiny-Identity-Buttons/952" style="width:95px; height:20px;">
+  <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/me/Tiny-Identity-Buttons/953" style="width:95px; height:20px;">
+  <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/me/Tiny-Identity-Buttons/97" style="width:95px; height:20px;">
+  <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/me/Tiny-Identity-Buttons/98" style="width:95px; height:20px;">
+  <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/me/Tiny-Identity-Buttons/99" style="width:95px; height:20px;">
+  <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/me/Tiny-Identity-Buttons/96" style="width:95px; height:20px;">
+</marquee>
+</div>
+ <div class="main">
+<!-- left section -->
+  <div class="left">
+<div class="container" style="width:455px; margin-left: 45px; font-family: 'handwritingmedium';  line-height: 19px; font-size:25px; display: flex; flex-direction: column;" >
+<mark style="font-family: 'dk_cool_crayonregular'; font-size:16px; width: 25%; background: linear-gradient(90deg, rgba(204,160,223,0.7343137938769257) 0%, rgba(204,160,223,1) 50%, rgba(204,160,223,0.6586835417760855) 100%);">Nickname(s):</mark> Noahie, noah ark, broah, snoah,  baby, gay, nerd, pupcat zoomer boy, puppy, silly, the annoying one, sara's five, youngest wolf <br>
+&nbsp;
+<mark style="font-family: 'dk_cool_crayonregular'; font-size:16px; width:55%; background: linear-gradient(90deg, rgba(204,160,223,0.7343137938769257) 0%, rgba(204,160,223,1) 50%, rgba(204,160,223,0.6586835417760855) 100%);">Likes (short n sweet edition):</mark> video editing, graphic + web design, photocard collecting, fanart, kpop, quackfoosh, ult/idol interactions: esp 01z, qsoob, yamazaki kento, hockey >3< <br>
+&nbsp;
+<mark style="font-family: 'dk_cool_crayonregular';font-size:18px; width:75%; background: linear-gradient(90deg, rgba(204,160,223,0.7343137938769257) 0%, rgba(204,160,223,1) 50%, rgba(204,160,223,0.6586835417760855) 100%);">DFI/BYF (for stan accounts and etc.): </mark> you don’t like bts, a minor, you dont like kpop rps/rpf BUT DNI if you take shipping srsly, i am a heavy retweeter, heavy multi-kpop but very multi-fandom overall <br>
+&nbsp;
+<mark style="font-family: 'dk_cool_crayonregular'; font-size:19px; width:40%; background: linear-gradient(90deg, rgba(204,160,223,0.7343137938769257) 0%, rgba(204,160,223,1) 50%, rgba(204,160,223,0.6586835417760855) 100%);">FOR ARCRIVE (twt): </mark> (1) if i tweet abt the dsmp it’s most likely about the lore or only quackfoosh centered, i reminisce that time only around them. (3) there are a lot of streamers i do not tolerate, but dni if you’re a dteam stan. (4) I AM A KPOP STAN!! i consume kpop 24/7, dni if that’s not your thing! (esp if you dislike bts) <br>
+&nbsp; <br>
+you can learn more about me and what i like throughout this website :3 
+</div>
+<div class="container" style="margin-left:450px; margin-top:160px; ">
+ <div class="homebutton">
+  <a href="https://networklove.neocities.org/" style="font-family: 'dk_cool_crayonregular';margin-top:100px; margin-left:20px; font-size: 30px;position: absolute;">HOME</a> <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/me/home.png" style="width: 130px;"> 
+  </div>
+</div>
+  <div class="floatingpic">
+  <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/me/lsfm2.jpg" style="margin-top:-250px; width: 250px;">
+  </div>
+</div>
+ <!-- right section -->
+  <div class="right">
+    <div class="container" style="height: 780px;">
+  <div class="updatebox" style="width: 100%; background: url(https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/me/lsfm3.jpg); background-size: cover;"> 
+    <div class="scrolltext" style="width: 90%; height: 220px; margin: 25px auto;">
+      this is a placeholder for now! (you can scroll through the playlist without viewing in app!)
+        <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/playlist/heavy-rotation-mix/pl.pm-20e9f373919da080c62be8be9d2dfbc2"></iframe>
+</div> 
+</div>
+<div class="idbox"> <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/me/piccrew.png" style="width: 200px; height: 200px; margin: 50px 0 0 20px; float: left;"> 
+<div class="idtext" style="margin: 15px 0 0 15px; float: right;"> 
+<div class="idtext" style="font-size: 25px; text-align:center; margin: 0 0 25px 0;"> IDENTIFICATION CARD </div>
+Issued to: <div class="idpen">Noah</div>
+<br>
+Date of birth: <div class="idpen">10/07/2001</div>
+<br>
+Place of issue: <div class="idpen">Magic Island</div>
+<br>
+Date of issue: <div class="idpen">12/19/2024</div>
+  </div>
+</div>
+</div>
+</div>
+</body>   
+</html> 

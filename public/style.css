@@ -1,0 +1,114 @@
+body {
+  box-sizing: border-box;
+  align-items: center;
+}
+.strike {
+  text-decoration: line-through; 
+}
+header {
+ background: transparent
+}
+@font-face {
+font-family: 'Minecraft';
+src: url("https://networklove.neocities.org/minecraft.ttf");
+}
+@font-face {
+    font-family: 'arrival_demoregular';
+    src: url('arrivaldemoregular-webfont.woff2') format('woff2'),
+         url('arrivaldemoregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'dk_cool_crayonregular';
+    src: url('dk_cool_crayon-webfont.woff2') format('woff2'),
+         url('dk_cool_crayon-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'garamondnormal';
+    src: url('garamond_allfont.ru-webfont.woff2') format('woff2'),
+         url('garamond_allfont.ru-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'handwritingmedium';
+    src: url('handwriting-webfont.woff2') format('woff2'),
+         url('handwriting-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'minecraftmedium';
+    src: url('minecraft-webfont.woff2') format('woff2'),
+         url('minecraft-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'only_youregular';
+    src: url('only_you_handwritten_free_font-webfont.woff2') format('woff2'),
+         url('only_you_handwritten_free_font-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+font-family: 'MartianMono-Regular';
+src: url("https://networklove.neocities.org/MartianMono-Regular.ttf");
+}
+@font-face {
+font-family: 'Retron2000 Regular';
+src: url("https://networklove.neocities.org/Retron2000.ttf");
+}
+@font-face {
+font-family: 'Blue Screen Personal Use';
+src: url("https://networklove.neocities.org/BlueScreenPersonalUse.ttf");
+}
+@font-face {
+font-family: 'Kindergarden';
+src: url("https://networklove.neocities.org/Kindergarden.ttf");
+}
+@font-face {
+font-family: 'A Little Pot';
+src: url("https://networklove.neocities.org/alittlepot.ttf");
+}
+@font-face {
+font-family: 'Marker Comp';
+src: url("https://networklove.neocities.org/MarkerComp.ttf");
+}
+.inter-<uniquifier> {
+font-family: "Inter", serif;
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: normal;
+}
+.sixtyfour-<uniquifier> {
+font-family: "Sixtyfour", serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+font-variation-settings:
+  "BLED" 0,
+  "SCAN" 0;
+}
+.doto-<uniquifier> {
+font-family: "Doto", serif;
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: normal;
+font-variation-settings:
+  "ROND" 0;
+}
+.alex-brush-regular {
+font-family: "Alex Brush", cursive;
+font-weight: 400;
+font-style: normal;
+}
