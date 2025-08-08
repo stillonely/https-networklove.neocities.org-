@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html Lang="en">
+<head>
+<meta charset="UTF-8">
+<title>electronic network love</title>
+<link rel="icon" type="image/gif" href="https://cutekawaiiresources.wordpress.com/wp-content/uploads/2016/11/kuromi-2.gif">
+<link href="https://networklove.neocities.org//style.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Doto:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+ <style>
+body { 
+  background: linear-gradient(0deg,rgba(155, 42, 127, 0) 0%, rgba(218, 130, 162, 0.315) 100%), url("https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/NLbg4.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+  background-position: bottom center;
+  overflow-x: hidden;
+}
+.wrapper {
+  position: absolute;
+  top: -32px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 5em auto;
+  width: 1000px;
+  height: 900px;
+}
+.border {
+  background-color: #544540;
+  border-radius: 10px;
+  border: 8px solid transparent;
+}
+.header {
+   background-color: transparent;
+   height: 55px;
+}
+.main{
+   display: flex;
+   flex: 1;
+}
+.left{
+   display: flex;
+   flex-direction: column;
+   width: 20%;
+   margin: 0;
+}
+.middle{
+   background: transparent; 
+   padding: 2%;
+   width: 53%;
+}
+.right{
+    background: rgb(73,72,101);
+    background: linear-gradient(180deg, rgba(73,72,101,1) 0%, rgba(232,232,232,0) 100%);
+    background-image: url();
+    background-position: center;
+    background-repeat: repeat-x;
+    padding: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+}
+footer{
+  color: black;
+  width: 350px;
+  margin: auto;
+  font-family: 'MartianMono-Regular';
+  padding: 1em 0 1em 0;
+  text-align: center;
+}
+.topheader {
+  height: 125px;
+}
+.divider {
+  height: 10px;
+}
+p {
+  font-family: 'garamondnormal';
+  font-size: 15px;
+  color: black;
+  margin: 6px; 
+}
+a {
+  color: rgb(12, 12, 12);;
+  text-decoration: underline 0.2px wavy;
+}
+a:hover {
+  font-style: italic;
+  color: #dc5fbf;
+  letter-spacing: 5px;
+  text-decoration: none;
+}
+ul {
+margin-left: -26px;
+font-size: 18px;
+font-family: 'arial'; 
+letter-spacing: -1px;
+list-style-type: "✦ ";
+line-height: 22px;
+text-shadow: 0 1px 1px rgba(0,0,0,.3);
+color:#373737
+}
+li.a {
+margin-left: 10px;
+font-family: 'handwritingmedium'; 
+letter-spacing: -1px;
+font-weight: bolder;
+font-size: 22px;
+list-style-type: "★ ";
+text-shadow: 0 1px 1px rgba(0,0,0,.3);
+}
+.text {
+ font-size: 40px;
+ color: black;
+ font-family: 'handwritingmedium'; 
+}
+.navbutton {
+   width: fit-content;
+   margin: -3px 0 8px 6px;
+   padding: 6px;
+   font-size: 25px;
+   font-family: 'garamondnormal';
+   color: rgb(12, 12, 12);
+   letter-spacing: 0.0em;
+   line-height: 15px;
+   text-shadow: 0 1px 1px rgba(0,0,0,.3);
+   background: url(https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/main%20page/letter.png);
+   background-size: cover;
+}
+.navbutton:hover {
+  width: 215px;
+  text-align: center;
+  position: relative;
+  left: 50px;
+  font-size: 26px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 255px; 
+  width: 530px;
+  scrollbar-width: thin;
+  scrollbar-color: #8583B8 black;
+  background: transparent;
+}
+.scrolltext {
+  font-family: 'garamondnormal';
+  border-radius: 5px;
+  overflow: auto;
+  padding: 5px;
+  scrollbar-width: thin;
+  scrollbar-color: #8583B8 black;
+  background: white;
+  border: 2px inset #acacac;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.updatebox {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  overflow: auto;
+  padding: 5px;
+  background: url(https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/main%20page/pinkgraph.png); 
+  background-size: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: #8583b800 rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.statusmsg {
+  color: white;
+  font-size: 20px;
+  overflow: hidden;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.568);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+  margin-top: 5px;
+}
+.statuscreds {
+  font-family: 'minecraftmedium';
+  font-size: 15px;
+  color: #fff;
+}
+.mpbase {
+ margin: 0 auto;
+ background: -webkit-gradient(linear, left top, left bottom, from(#F5B1CD), to(#6e293e));
+ box-shadow: 0 1px 2px rgba(0,0,0,.2);
+ border: 2px inset black; 
+ border-radius: 40px;
+ z-index: 3;
+}
+.musicplayer {
+  margin: 8px auto;
+  background: rgb(226,226,226);
+  background: linear-gradient(103deg, rgb(53, 52, 50) 43%, rgba(0,0,0,0.9780112728685224) 52%, rgba(1,1,1,0.9780112728685224) 93%, rgba(83,83,83,1) 100%); 
+  border-radius: 52px;
+  border: 3px inset #b9849e;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.cdimg {
+  float: left;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); } 
+}
+.floatingpic {
+ width: 315px;
+ animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+}
+.scrollfrens {
+  overflow: auto;
+  margin: 47px 0 -2px 0;
+  scrollbar-width: thin;
+  scrollbar-color: #8583b800 rgba(0, 0, 0, 0);
+}
+.f-profile {
+    width: 260px;
+    height: 45px;
+    background: rgb(240, 240, 240);
+    overflow: hidden;
+    border-bottom: 0.1em solid #c1c1c1;
+}
+.f-name {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-weight: 800;
+    letter-spacing: -0.09em;
+    float: left;
+    line-height: 25px;
+    text-decoration: underline 1px wavy red;
+    margin: 8px 0 0 8px;
+    color: black;
+}
+.f-name:hover {
+  font-style: italic;
+  color: #bd3663;
+}
+.f-icon {
+  width: 45px; 
+  height:45px; 
+  float:left;
+}
+.featbox {
+  width: 175px;
+  height: 175px;
+  overflow:hidden scroll;
+  scrollbar-width: thin;
+  padding: 6px;
+  scrollbar-color: #111111 rgba(0, 0, 0, 0);
+  position: absolute; 
+  transform: rotate(-4deg); 
+  top:52px; 
+  left:44px;
+
+}
+.featpic {
+  width: 170px;
+  height: 170px;
+  margin: 3px;
+}
+.stamps {
+  width: 215px;
+  height: 250px;
+  margin-left: 28px;
+  margin-top: 6px;
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+<header>
+       <div class="topheader"><img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/main%20page/sidekicksphotos.gif" style="position: absolute; width:144px; transform: rotate(1deg); margin-left: 722px; margin-top: 15px; z-index:2;"> <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/NLlogo2.png" style="width: 1000px; position: absolute; margin: -35px 0 0 0px; z-index: 3; filter: drop-shadow(0.5px 0.5px 8px white);">
+  </div>
+  <div class="border" style="background: transparent; border-radius: 0px;"><div class="divider"></div></div>
+</header>
+       <div class="main">
+ <!-- left section -->
+        <div class="left">
+<div class="floatingpic" style="left: -45px; position: absolute;z-index: -2; filter:none;animation: none;">
+     <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/main%20page/taejunpil3.gif" style="width: 320px;"> </div>
+<div class="floatingpic" style="left: -230px; top: 70px; transform: rotate(-14deg); position: absolute;z-index: -3; filter:none;animation: none;">
+<img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/main%20page/apple.png" style="width: 330px;"> </div>
+<!-- nav -->
+    <div class="container" style="align-items: end; width: 200px;display: flex; flex-direction:column;position: relative;right: 188px;top: 30px;">
+    <div class="navbutton"><a href="https://networklove.neocities.org/abt">Abt Me</a> <img src=https://cutekawaiiresources.wordpress.com/wp-content/uploads/2018/03/677.gif> </div>
+    <div class="navbutton"><a href="https://networklove.neocities.org/arcrive">ARCRIVE</a> <img src=https://cutekawaiiresources.wordpress.com/wp-content/uploads/2016/11/kuromi-11.gif> </div>
+    <div class="navbutton"><a href="https://networklove.neocities.org/not_found"><span class="strike">Collections</span></a> <img src=https://cutekawaiiresources.wordpress.com/wp-content/uploads/2018/03/3118.gif></div>
+    <div class="navbutton"><a href="https://networklove.neocities.org/kpop">KPOP</a> <img src=https://cutekawaiiresources.wordpress.com/wp-content/uploads/2016/11/kuromi-3.gif></div>
+    <div class="navbutton"><a href="https://networklove.neocities.org/not_found"><span class="strike">Others</span></a> <img src=https://cutekawaiiresources.wordpress.com/wp-content/uploads/2016/11/melody-8.gif></div>
+    <div class="navbutton"><a href="https://networklove.neocities.org/not_found"><span class="strike">Shrines</span></a> <img src=https://cutekawaiiresources.wordpress.com/wp-content/uploads/2016/11/cinnamoroll-bullet-45.gif></div>
+    <div class="navbutton"><a href="https://networklove.neocities.org/resources">Resources</a> <img src=https://cutekawaiiresources.wordpress.com/wp-content/uploads/2016/11/pom-pom-purin-15.gif></div>
+    </div>
+<!-- end of nav -->
+<div class="floatingpic">
+  <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/sakura.png" style="position: absolute;transform: rotate(-2deg); width: 315px;top: -210px;left: -428px;"></div>
+<div class="floatingpic" style="left: -70px; top: 530px;  transform: rotate(-3deg); position: absolute;z-index: -1; filter:none;animation: none;">
+     <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/main%20page/tk2.gif" style="width: 300px;"> </div>
+<div class="floatingpic" style="left: 20px; top: 425px;  transform: rotate(2deg); position: absolute;z-index: -1; filter:none;animation: none;">
+<img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/main%20page/clip.png" style="width: 150px;"> </div>
+  </div>
+<!-- middle -->
+        <div class="middle">
+<div class="container" style="height:225px;">
+    <div class="scrolltext" style="margin-top: -5px; height:200px; background: url(https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/main%20page/container.png);"> 
+ <span><img src="Pi7_GIF_CMP.gif" style="float: left; width: 18%;"></span> <p style="text-align: justify; font-size: 16px; line-height: 15px;"> Welcome >3< Hello. Ola. Hey. The name's Noah! I am a 23 year old transmasc..guy, dude..from California! This website is a personal archive / information site for my own pleasure, but also for the (gay) people on the web who come upon my social media accounts and want to get to know me! <br> 
+          I have no idea what I'm doing! I have never learned how to code sites. I was too young to explore on Tumblr and especially too young to have a MySpace. (Can you tell I held onto to what my siblings have told me.) <span><img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/sunnyapple.gif" style="float: right; width: 15%;"></span> I did take a web design class in college which was very fun, very basic, and I totally don't remember much! I am currently in school for Design (because graphic design is my passion AND my girlfriend.) so I know my academic journey of coding won't end there~ <br> 
+          I am a big fan of web design :3 especially when I get to stare at it and go "Oooo, what does this button do!" (ah~ I love pressing things.) When it comes to my own personal journey of messing around with web design, I can say that: Listography is pretty neat, I still technically use it to this day. When the early beginning of Carrd era came upon kpop twitter, I instantly fell in love and constantly made different sites and always looked at other carrds because I loved how people got creative with it. I know my way around Notion and Rentry (also txti at one point. RIP.) and all the good gen z stuffs. and the most recent ones I have explored are mmm and straw page! but what do these site builders have in common? simple building sites where you don't have to worry about coding! :D Well. I mean you can pay for Carrd (been there, done that…) to import embeds. Rentry (and txti.. F for respects..) is a simple, cute, markdown service which I always had fun messing around with when I wanted something simple and easy to read. <br> 
+           Nonetheless, none of these sites gave me the freedom and challenge that Neocities brings. I was so happy that one day I happened to be scrolling through Tumblr and I found some users promoting their Neocities websites. It opened a whole new world for me that I didn't know was right at my digital fingertips. I am truly living my high school dream of wanting to join coding classes but didn't have the balls to LOL. And I just never thought something like this existed so I'm very excited to get things going!<br> 
+           I have a lot of plans for this website and hopefully I can accomplish them :3 like I said at the start (which btw if you made it this far?? thank you??) I want this website to be all things me! I hope to make this my main site where people can get to know me. All in one place, no more switching back and forth between sites because I get bored and want something new. <span><img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/kuromibow.gif" style="float: left; width: 18%;"></span>I want to be able to dump all my stuff here and get lost in my interests and thoughts while being aware that a stranger can pass by and just perceive me because well. I've never been one to be scared of what digital footprints I leave behind so why not just combine them all together? ^3^ just an archive of me. <br> 
+          So nice to meet you, I hope you like it here. <br> You are safe. &#11088</p>
+</div>
+</div>
+<div class="container">
+  <div class="updatebox" style="width: 50%;"> 
+    <div class="text" style="width: 269px;height: 40px; margin-top: -5px; margin-left: -5px; position: absolute; background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/23618/rip.svg) bottom;background-size: 100%;">
+     <div class="text" style="margin-left: 10px; margin-top: 3px; letter-spacing: -1px; font-weight: bolder;text-shadow: 0 1px 1px rgba(0,0,0,.3);height: 30px; margin-left: 10px; position: absolute; font-size: 25px;">Currently >⩊<</div>
+     </div>
+<ul style="margin-top: 40px;">
+  <li class="a"> Notable Hyperfixations: </li>
+<ul>
+<li>LADS! esp caleb :3 my appleboy, caleb <3</li>
+<li>my tubas muahmuah</li>
+<li>tyunkkura  ^> ˕ <マ ₊˚⊹♡, qsoob, 01z... </li>
+</ul>
+  <li class="a">Recent released faves:</li>
+<ul>
+<li>TXT'S THE STAR CHAPTER: TOGETHER </li>
+<li>twice's this is for <3 </li>
+<li>illit's bomb - EP ₍^. .^₎⟆ </li>
+<li>monster high fright song ft katseye </li>
+</ul>
+  <li class="a">Concerts this year:</li>
+<ul>
+<li> &#x1F5F9; eaJ ?party (i miss him..)</li>
+<li> &#x2610; TXT ACT : TOMORROW T_T</li>
+<li> &#x2610; LSFM Easy Crazy Hot!!!!!!!</li>
+</ul>
+  <li class="a">Shows:</li>
+<ul>
+<li>ABO Desire (like im so srs...)</li>
+</ul>
+  <li class="a">Last Watched Movies:</li>
+<ul>
+<li>lego batman fuck yeah</li>
+</ul>
+  <li class="a">Games:</li>
+<ul>
+<li>love and deepspace....</li>
+<li>(fuck) puzzle svt</li>
+</ul>
+</ul>
+
+
+  </div> 
+  <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/lsfm.jpg"  style="box-shadow: -9px 1px 6px -7px rgba(0,0,0,0.25); -webkit-box-shadow: -9px 1px 6px -7px rgba(0,0,0,0.25); -moz-box-shadow: -9px 1px 6px -7px rgba(0,0,0,0.25); float: right;">
+</div>
+  <!-- STATUS -->
+<div class="statusmsg" style="width:530px; height:fit-content;">
+   <div class="statuscreds"style="float:left; width: 100%; margin-left: 10px; margin-top: 5px;">Feeling:<a href="https://www.imood.com/users/stillonely"><img src="https://moods.imood.com/display/uname-stillonely/fg-ffffff/trans-1/imood.gif" font-family='minecraftmedium' alt="The current mood of stillonely at www.imood.com" border="0"></a></div>
+<div class=”container” style="width: 500px; float:left; height:40px; display: flex; flex-direction: row; margin-left: 10px;">
+ <div class="statustext" style="display: flex; flex-direction: row; height:20px;width: 32%;">
+<div class="statuscreds" style="color:pink;">[</div><div class="statuscreds">STATUS</div><div class="statuscreds" style="color:pink;">] stillonely</div><div class="statuscreds">:</div></div> 
+<iframe src="https://petrapixel.neocities.org/widgets/statuscafe?center=0&font=Minecraft&fontSize=15px&color=fff&linkColor=d92f2f&username=stillonely&hideUsernameAndTime=1" frameborder="0" title="Status.Cafe Status" style="height:40px; width: 80%; margin-top: -3px;"></iframe>
+</div>
+   <!-- credit -->
+<div class="statuscreds" style="float:left; width: 100%; margin-left: 10px"> [Server] powered by <a href="https://petrapixel.neocities.org/coding/widgets" style="color:#fff;">petrapixel</a></div></p> 
+</div>
+   <!-- END OF STATUS-->
+</div>       
+<!-- right section -->
+ <div class="right">
+  <div class="floatingpic" style="transform: rotate(7deg); top: -58px; right: -282px; position: absolute;z-index: 1; filter:none;animation: none;">
+  <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/main%20page/xyznl.png" style="width: 450px;"> </div>
+ <div class="floatingpic" style="transform: rotate(2deg); top: 125px; left: 1014px; position: absolute;z-index: -1; filter:none;animation: none;">
+  <div class="navbutton" style="position: absolute;top: 200px; transform: rotate(90deg);right: 35px; width: 82px;pointer-events: none;">Pic Log</div>
+     <a href="https://piclog.blue/profile.php?id=1106"><img src="https://piclog.blue/latest.php?id=1106" style="border: 5px double #ffffff; width: 200px; margin: 60px auto;"></a> </div> 
+<!-- frens -->
+<div class="scrollfrens" style="float: right; height:280px; margin-bottom: 3px;">
+  <div class="f-profile" style="margin-bottom: -25px; width: 250px; height: 30px; margin-top: -31px; position: absolute;">
+   <div class="f-name" style="pointer-events: none;position: relative;text-align: center; right: -20px; top: -6px; text-shadow: 0.5px 0.5px 8px white; text-decoration: none;"> ⊹₊ ˚‧︵‿₊୨ Friends ୧₊‿︵‧ ˚ ₊⊹ </div>
+   </div>
+        <div class="f-profile"> 
+   <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove//friends/icons/ace.png">
+  <div class="f-name"> Ace </div>
+    </div>
+        <div class="f-profile">
+    <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove//friends/icons/alana.png">
+    <div class="f-name"> Alana </div>
+    </div>
+        <div class="f-profile">
+    <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove//friends/icons/char.png">
+    <div class="f-name"> Char </div>
+    </div>
+        <div class="f-profile">
+    <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove//friends/icons/dallas.png">
+    <div class="f-name"> Dallas </div>
+    </div>
+        <div class="f-profile">
+   <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove//friends/icons/dna.png">
+   <div class="f-name"> DNA </div>
+    </div>
+        <div class="f-profile">
+   <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove//friends/icons/fatima.png">
+    <div class="f-name"> Fatima </div>
+    </div>
+        <div class="f-profile">
+    <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove//friends/icons/ice.png">
+    <div class="f-name"> Ice </div>
+    </div>
+        <div class="f-profile">
+   <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove//friends/icons/jay.png">
+    <div class="f-name"> Jay </div>
+    </div>
+        <div class="f-profile">
+    <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove//friends/icons/lal.png">
+    <div class="f-name"> Lal </div>
+    </div>
+    <div class="f-profile">
+     <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove//friends/icons/lily.png">
+    <div class="f-name"> Lily </div>
+       </div>
+           <div class="f-profile">
+     <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove//friends/icons/mae.png">
+    <div class="f-name"> Mae </div>
+       </div>
+       <div class="f-profile">
+     <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove//friends/icons/mel.png">
+    <div class="f-name"> Mel </div>
+       </div>
+           <div class="f-profile">
+     <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove//friends/icons/nat.png">
+    <div class="f-name"> Nat </div>
+       </div>
+           <div class="f-profile">
+   <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove//friends/icons/web.png">
+    <div class="f-name"> Nathan </div>
+       </div>
+</div> 
+  <!-- stamps -->
+<div class="container" style="width: 250px; height:78px; margin-bottom: 10px; background-image: url(https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/main%20page/pinkgrid.png); background-size: cover;">
+<div class="stamps">
+<marquee scrollamount="13">
+<img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/stamps/stars.gif">
+<img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/stamps/trans2.gif">
+<img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/stamps/free-palestine.png">
+<img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/stamps/gay1.png">
+<img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/stamps/k3.gif">
+<img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/stamps/e1.gif">
+<img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/stamps/tech2.gif">
+<img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/stamps/cat1.gif">
+<img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/stamps/mc3.png">
+<img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/stamps/silly1.png">
+<img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/stamps/cringeisdead.png">
+<img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/stamps/yaoipride.png">
+<img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/stamps/rb1.png">
+<img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/stamps/tech3.png">
+</marquee>
+ </div>
+</div>
+  <!-- music player -->
+<div class="mpbase" style="height:110px; width:100%;  display: flex; flex-direction: row; "> 
+ <div class="musicplayer" style="width: auto; height:90px; padding: 0.5px; display: flex; flex-direction: row; ">
+   <img class="cdimg" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/main%20page/cdNL.png" width="90" height="90">
+   <div class="lastfm" style="border: 2px ridge #373737; text-shadow: 0 1px 1px rgba(0,0,0,.3); background-image: url(https://networklove.neocities.org/abstract-monitor-led-screen-texture-bg.jpg);
+  background-size: cover;  height: 50px; width:52%; float:right; margin-top: 15px; margin-left: 5px; padding:2px; display: flex; flex-direction: row;"> <p style="color:black; font-size:25px;margin-top: 8px; margin-left: 5px;">♫</p> 
+   <marquee scrollamount="12"><iframe src="https://petrapixel.neocities.org/widgets/lastfm?center=1&font=Retron2000Regular&fontSize=13px&color=000000&username=neptunedurr&swapPositions=0&delimiter=by&underline=1" frameborder="0" title="Last.Fm Status" style="width: 450px; height:90px; margin: 13px auto;"></iframe></marquee> </div> </div>
+   </div>
+     <!-- end of mp -->
+<div class="floatingpic" style="right: -132px; top: 622px; transform: rotate(2deg); position: absolute;z-index: 1; filter:none;animation: none;">
+     <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/main%20page/locket.png" style="width: 320px;"> </div> 
+</div>
+</div>
+  <!-- footer -->
+<footer>
+<a href="https://networklove.atabook.org/"><img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/main%20page/atabook.gif" style="width: 266px; position: absolute; top: 752px; right:532px; transform: rotate(1deg);"></a>
+<img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/main%20page/tag.png" style="z-index: -1;width: 550px; position: absolute; top: 695px; right:-10px; transform: rotate(-5deg);">
+<div class="text" style="width: 150px; line-height: 20px; letter-spacing: 2px; font-size: 28px; position: relative; top:-10px; right: -194px;transform: rotate(-5deg);">© surfing in the <a href="https://www.youtube.com/watch?v=cCrJYMxhuBA&pp=ygUWbmV0d29yayBsb3ZlIHNldmVudGVlbg%3D%3D">interwined</a> since 20241219</div>
+</footer>
+      </div>
+</div>
+</body>   
+</html> 
