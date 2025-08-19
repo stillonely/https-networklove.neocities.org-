@@ -83,7 +83,7 @@ p {
 }
 a {
   color: rgb(12, 12, 12);;
-  text-decoration: underline 0.2px wavy;
+  text-decoration: underline 0.2px wavy:
 }
 a:hover {
   font-style: italic;
@@ -293,6 +293,25 @@ text-shadow: 0 1px 1px rgba(0,0,0,.3);
   margin-left: 28px;
   margin-top: 6px;
 }
+@keyframes sway  {
+    0% { transform: rotate(8deg); }
+    50% { transform: rotate(-8deg); }
+    100% { transform: rotate(8deg); }
+}
+.object {
+  animation: sway 8.0s infinite;
+  animation-timing-function: ease-in-out;
+  -webkit-transform-origin: top;
+  -moz-transform-origin: top;
+  transform-origin: top;
+}
+.object2 {
+  animation: sway 6.0s infinite;
+  animation-timing-function: ease-in-out;
+  -webkit-transform-origin: top;
+  -moz-transform-origin: top;
+  transform-origin: top;
+}
 </style>
 </head>
 <body>
@@ -324,8 +343,8 @@ text-shadow: 0 1px 1px rgba(0,0,0,.3);
   <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/sakura.png" style="position: absolute;transform: rotate(-2deg); width: 315px;top: -210px;left: -428px;"></div>
 <div class="floatingpic" style="left: -70px; top: 530px;  transform: rotate(-3deg); position: absolute;z-index: -1; filter:none;animation: none;">
      <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/main%20page/tk2.gif" style="width: 300px;"> </div>
-<div class="floatingpic" style="left: 20px; top: 425px;  transform: rotate(2deg); position: absolute;z-index: -1; filter:none;animation: none;">
-<img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/main%20page/clip.png" style="width: 150px;"> </div>
+<div class="floatingpic" style="left: 8px; top: 433px; transform: rotate(2deg); position: absolute;z-index: -1; filter:none;animation: none;">
+<img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/main%20page/clip.png" style="width: 140px;"> </div>
   </div>
 <!-- middle -->
         <div class="middle">
@@ -399,7 +418,14 @@ text-shadow: 0 1px 1px rgba(0,0,0,.3);
 <!-- right section -->
  <div class="right">
   <div class="floatingpic" style="transform: rotate(7deg); top: -58px; right: -282px; position: absolute;z-index: 1; filter:none;animation: none;">
-  <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/main%20page/xyznl.png" style="width: 450px;"> </div>
+  <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/main%20page/chain.png" style="width: 450px;">
+  <div class="object" style="top: 555px; right: -71px; position: absolute;z-index: 1; filter:none;">
+  <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/main%20page/wycb.png" style="width: 100px;">
+  </div>
+  <div class="object2" style="top: 532px; right: -135px; position: absolute;z-index: 1; filter:none;">
+ <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/main%20page/applecharm.png" style="width: 100px;">
+  </div>
+  </div>
  <div class="floatingpic" style="transform: rotate(2deg); top: 125px; left: 1014px; position: absolute;z-index: -1; filter:none;animation: none;">
   <div class="navbutton" style="position: absolute;top: 200px; transform: rotate(90deg);right: 35px; width: 82px;pointer-events: none;">Pic Log</div>
      <a href="https://piclog.blue/profile.php?id=1106"><img src="https://piclog.blue/latest.php?id=1106" style="border: 5px double #ffffff; width: 200px; margin: 60px auto;"></a> </div> 
