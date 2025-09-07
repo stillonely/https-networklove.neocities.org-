@@ -99,7 +99,7 @@ letter-spacing: -1px;
 list-style-type: "✦ ";
 line-height: 22px;
 text-shadow: 0 1px 1px rgba(0,0,0,.3);
-color:#373737
+color:#373737;
 }
 li.a {
 margin-left: 10px;
@@ -170,20 +170,6 @@ text-shadow: 0 1px 1px rgba(0,0,0,.3);
 	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
 	box-shadow: 0 1px 2px rgba(0,0,0,.2);
 }
-.statusmsg {
-  color: white;
-  font-size: 20px;
-  overflow: hidden;
-  padding: 5px;
-  background: rgba(0, 0, 0, 0.568);
-	box-shadow: 0 1px 2px rgba(0,0,0,.2);
-  margin-top: 5px;
-}
-.statuscreds {
-  font-family: 'minecraftmedium';
-  font-size: 15px;
-  color: #fff;
-}
 .mpbase {
  margin: 0 auto;
  background: -webkit-gradient(linear, left top, left bottom, from(#F5B1CD), to(#6e293e));
@@ -239,14 +225,16 @@ text-shadow: 0 1px 1px rgba(0,0,0,.3);
   overflow: auto;
   margin: 47px 0 -2px 0;
   scrollbar-width: thin;
-  scrollbar-color: #8583b800 rgba(0, 0, 0, 0);
+  scrollbar-color: #8583b800 transparent;
 }
 .f-profile {
-    width: 260px;
+    width: 250px;
     height: 45px;
     background: rgb(240, 240, 240);
     overflow: hidden;
     border-bottom: 0.1em solid #c1c1c1;
+    position: relative;
+    display: flex;
 }
 .f-name {
     font-size: 15px;
@@ -312,6 +300,57 @@ text-shadow: 0 1px 1px rgba(0,0,0,.3);
   -moz-transform-origin: top;
   transform-origin: top;
 }
+.s-box {
+  display: flex;
+  flex-direction: column;
+  height: 300px; 
+  width: 268px;
+  background: linear-gradient(180deg,rgba(217, 217, 217, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(245, 247, 247, 1) 90%);
+}
+.scrollstatus {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  scrollbar-width: thin;
+  scrollbar-color: #8583b800 transparent;
+  height: 95px;
+  margin: 5px auto;
+}
+.s-header{
+    width: 268px;
+    height: 25px;
+    background: linear-gradient(90deg,rgba(217, 217, 217, 0.55) 0%, rgba(255, 255, 255, 0.55) 100%);;
+    overflow: hidden;
+    border-bottom: 0.1em solid #c1c1c1;
+    position: relative;
+    display: flex;
+}
+.s-text {
+    font-size: 10px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: left;
+    font-weight: 500;
+    letter-spacing: -0.09em;
+    float: left;
+    line-height: 15px;
+    margin: 0 0 0 8px;
+    color: rgb(99, 99, 99);
+}
+.s-name {
+    font-family: 'Times New Roman', Times, serif; 
+    font-weight: 800; 
+    letter-spacing: 0.03em;
+    font-size: 20px;
+    line-height: 15px;
+    margin: 3px 0 0 8px;
+    color: rgb(66, 66, 66);
+}
+.s-icon {
+  border-radius: 100%;
+  width: 45px; 
+  height:45px; 
+  filter: drop-shadow(-5px 5px 0px #cfcfcf);
+}
 </style>
 </head>
 <body>
@@ -368,14 +407,14 @@ text-shadow: 0 1px 1px rgba(0,0,0,.3);
 <ul>
 <li>LADS! esp caleb :3 my appleboy, caleb <3</li>
 <li>my tubas muahmuah</li>
-<li>tyunkkura  ^> ˕ <マ ₊˚⊹♡, qsoob, 01z... </li>
+<li>my wen junhui  ^> ˕ <マ ₊˚⊹♡</li>
+<li>qsoob...</li>
 </ul>
   <li class="a">Recent released faves:</li>
 <ul>
 <li>TXT'S THE STAR CHAPTER: TOGETHER </li>
-<li>twice's this is for <3 </li>
+<li>cortis' color outside the lines ep </li>
 <li>illit's bomb - EP ₍^. .^₎⟆ </li>
-<li>monster high fright song ft katseye </li>
 </ul>
   <li class="a">Concerts this year:</li>
 <ul>
@@ -385,36 +424,62 @@ text-shadow: 0 1px 1px rgba(0,0,0,.3);
 </ul>
   <li class="a">Shows:</li>
 <ul>
+<li>alien stage</li>
 <li>ABO Desire (like im so srs...)</li>
+<li>rewatching tvd</li>
 </ul>
   <li class="a">Last Watched Movies:</li>
 <ul>
-<li>lego batman fuck yeah</li>
+<li>the shadow's edge (i love u, hu feng)</li>
+<li>weapons</li>
 </ul>
   <li class="a">Games:</li>
 <ul>
 <li>love and deepspace....</li>
-<li>(fuck) puzzle svt</li>
 </ul>
 </ul>
-
-
   </div> 
-  <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/lsfm.jpg"  style="box-shadow: -9px 1px 6px -7px rgba(0,0,0,0.25); -webkit-box-shadow: -9px 1px 6px -7px rgba(0,0,0,0.25); -moz-box-shadow: -9px 1px 6px -7px rgba(0,0,0,0.25); float: right;">
+ <!-- FILP -->
+  <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/lsfm.jpg"  style="float: right;">
 </div>
+<div class="container">
+    <div class="floatingpic" style="margin-top: -22px; left: 460px; transform: rotate(2deg); position: absolute; z-index: 1; filter:none;animation: none;">
+     <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/main%20page/nlflip.png" style="width: 300px;">
+</div>
+    <img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/lsfm.jpg"  style="width: 250px; height: 250px; box-shadow: -9px 1px 6px -7px rgba(0,0,0,0.25); -webkit-box-shadow: -9px 1px 6px -7px rgba(0,0,0,0.25); -moz-box-shadow: -9px 1px 6px -7px rgba(0,0,0,0.25); float: left;">
+  <div class="updatebox" style="position: relative; z-index: 0; background: none; float: right; height: 300px;"> 
   <!-- STATUS -->
-<div class="statusmsg" style="width:530px; height:fit-content;">
-   <div class="statuscreds"style="float:left; width: 100%; margin-left: 10px; margin-top: 5px;">Feeling:<a href="https://www.imood.com/users/stillonely"><img src="https://moods.imood.com/display/uname-stillonely/fg-ffffff/trans-1/imood.gif" font-family='minecraftmedium' alt="The current mood of stillonely at www.imood.com" border="0"></a></div>
-<div class=”container” style="width: 500px; float:left; height:40px; display: flex; flex-direction: row; margin-left: 10px;">
- <div class="statustext" style="display: flex; flex-direction: row; height:20px;width: 32%;">
-<div class="statuscreds" style="color:pink;">[</div><div class="statuscreds">STATUS</div><div class="statuscreds" style="color:pink;">] stillonely</div><div class="statuscreds">:</div></div> 
-<iframe src="https://petrapixel.neocities.org/widgets/statuscafe?center=0&font=Minecraft&fontSize=15px&color=fff&linkColor=d92f2f&username=stillonely&hideUsernameAndTime=1" frameborder="0" title="Status.Cafe Status" style="height:40px; width: 80%; margin-top: -3px;"></iframe>
+  <div class="s-box" style="position: relative; z-index: 0; margin-top: 14px; transform: rotate(2deg);">
+<img class="s-icon" style="position: absolute; z-index: 1; width: 65px; height: 65px; left: 194px; margin: 2px auto;" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/main%20page/mc.png">
+<div class="s-header">
+   <div class="s-text" style="text-align: center; text-shadow: 0.5px 0.5px 8px rgb(255, 255, 255);"> DEEPSPACE </div>
+   <div class="s-name" style="margin: 5px 0 0 50px; text-shadow: 0.5px 0.5px 8px rgb(255, 255, 255);"> stillonely </div>
+   </div> 
+<div class="imood" style="margin: 4px 0 0 70px; color: rgb(119, 119, 119); font-family: Verdana; font-size: 8px; width: 100%;">
+    Feeling:<a href="https://www.imood.com/users/stillonely"><img src="https://moods.imood.com/display/uname-stillonely/fg-777777/trans-1/imood.gif" 
+    font-family='Verdana' alt="The current mood of stillonely at www.imood.com" border="0" style="margin: -4px auto;">
+  </a></div>
+<div class="scrollstatus" style="display: flex; flex-direction: row; position: relative; z-index: 2; overflow: hidden;"> 
+<img class="s-icon" style="margin: 3px 0 0 10px;" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/main%20page/mc.png">
+<div class="scrollstatus" style="display: flex; flex-direction: column;">
+ <div class="s-name" style="position: absolute; z-index: 2; margin: 3px 8px auto;"> <a href="https://status.cafe/users/stillonely" style="color:rgb(204, 94, 74);">stillonely </a>
 </div>
+</div>
+<iframe src="https://petrapixel.neocities.org/widgets/statuscafe?center=0&font=Verdana&fontSize=15px&color=2B2B2B&linkColor=d92f2f&username=stillonely&hideUsernameAndTime=1" frameborder="0" title="Status.Cafe Status" style="width: 190px; margin: 30px 8px auto;"></iframe>
+  </div>
    <!-- credit -->
-<div class="statuscreds" style="float:left; width: 100%; margin-left: 10px"> [Server] powered by <a href="https://petrapixel.neocities.org/coding/widgets" style="color:#fff;">petrapixel</a></div></p> 
+<div class="scrollstatus" style="display: flex; flex-direction: row; position: relative; z-index: 2; overflow: hidden;"> 
+<img class="s-icon" style="margin: 3px 0 0 16px;" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/main%20page/leb.png">
+<div class="scrollstatus" style="display: flex; flex-direction: column;">
+ <div class="s-name" style="margin: 3px 8px auto; color:rgb(204, 94, 74);">my apple boy</a></div>
+ <p style="position: relative; z-index: 2; color: #2B2B2B; margin: -30px 8px auto; font-family: Verdana; font-size: 15px;">this status is powered by <a href="https://petrapixel.neocities.org/coding/widgets" style="color:#000000;">petrapixel</a> :3</p>
+  </div>
+  </div>
 </div>
    <!-- END OF STATUS-->
-</div>       
+  </div>    
+</div>
+</div>
 <!-- right section -->
  <div class="right">
   <div class="floatingpic" style="transform: rotate(7deg); top: -58px; right: -282px; position: absolute;z-index: 1; filter:none;animation: none;">
@@ -430,32 +495,32 @@ text-shadow: 0 1px 1px rgba(0,0,0,.3);
   <div class="navbutton" style="position: absolute;top: 200px; transform: rotate(90deg);right: 35px; width: 82px;pointer-events: none;">Pic Log</div>
      <a href="https://piclog.blue/profile.php?id=1106"><img src="https://piclog.blue/latest.php?id=1106" style="border: 5px double #ffffff; width: 200px; margin: 60px auto;"></a> </div> 
 <!-- frens -->
-<div class="scrollfrens" style="float: right; height:280px; margin-bottom: 3px;">
-  <div class="f-profile" style="margin-bottom: -25px; width: 250px; height: 30px; margin-top: -31px; position: absolute;">
+<div class="scrollfrens" style="width: 260px;float: right; height:280px; margin-bottom: 3px;">
+<div class="f-profile" style="margin-bottom: -25px; width: 250px; height: 30px; margin-top: -31px; position: absolute;">
    <div class="f-name" style="pointer-events: none;position: relative;text-align: center; right: -20px; top: -6px; text-shadow: 0.5px 0.5px 8px white; text-decoration: none;"> ⊹₊ ˚‧︵‿₊୨ Friends ୧₊‿︵‧ ˚ ₊⊹ </div>
    </div>
         <div class="f-profile"> 
-   <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove//friends/icons/ace.png">
+   <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/friends/icons/ace.png">
   <div class="f-name"> Ace </div>
     </div>
         <div class="f-profile">
-    <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove//friends/icons/alana.png">
+    <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/friends/icons/alana.png">
     <div class="f-name"> Alana </div>
     </div>
         <div class="f-profile">
-    <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove//friends/icons/char.png">
+    <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/friends/icons/char.png">
     <div class="f-name"> Char </div>
     </div>
         <div class="f-profile">
-    <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove//friends/icons/dallas.png">
+    <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/friends/icons/dallas.png">
     <div class="f-name"> Dallas </div>
     </div>
         <div class="f-profile">
-   <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove//friends/icons/dna.png">
+   <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/friends/icons/dna.png">
    <div class="f-name"> DNA </div>
     </div>
         <div class="f-profile">
-   <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove//friends/icons/fatima.png">
+   <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/friends/icons/fatima.png">
     <div class="f-name"> Fatima </div>
     </div>
         <div class="f-profile">
@@ -463,31 +528,31 @@ text-shadow: 0 1px 1px rgba(0,0,0,.3);
     <div class="f-name"> Ice </div>
     </div>
         <div class="f-profile">
-   <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove//friends/icons/jay.png">
+   <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/friends/icons/jay.png">
     <div class="f-name"> Jay </div>
     </div>
         <div class="f-profile">
-    <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove//friends/icons/lal.png">
+    <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/friends/icons/lal.png">
     <div class="f-name"> Lal </div>
     </div>
     <div class="f-profile">
-     <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove//friends/icons/lily.png">
+     <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/friends/icons/lily.png">
     <div class="f-name"> Lily </div>
        </div>
            <div class="f-profile">
-     <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove//friends/icons/mae.png">
+     <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/friends/icons/mae.png">
     <div class="f-name"> Mae </div>
        </div>
        <div class="f-profile">
-     <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove//friends/icons/mel.png">
+     <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/friends/icons/mel.png">
     <div class="f-name"> Mel </div>
        </div>
            <div class="f-profile">
-     <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove//friends/icons/nat.png">
+     <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/friends/icons/nat.png">
     <div class="f-name"> Nat </div>
        </div>
            <div class="f-profile">
-   <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove//friends/icons/web.png">
+   <img class="f-icon" src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/friends/icons/web.png">
     <div class="f-name"> Nathan </div>
        </div>
 </div> 
@@ -527,8 +592,8 @@ text-shadow: 0 1px 1px rgba(0,0,0,.3);
 </div>
   <!-- footer -->
 <footer>
-<a href="https://networklove.atabook.org/"><img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/main%20page/atabook.gif" style="width: 266px; position: absolute; top: 752px; right:532px; transform: rotate(1deg);"></a>
-<img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/main%20page/tag.png" style="z-index: -1;width: 550px; position: absolute; top: 695px; right:-10px; transform: rotate(-5deg);">
+<a href="https://networklove.atabook.org/"><img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/main%20page/atabook.gif" style="width: 266px; position: absolute; top: 952px; right:532px; transform: rotate(1deg);"></a>
+<img src="https://file.garden/Z2EbztMMnTW1Ano8/NetworkLove/main%20page/tag.png" style="z-index: -1;width: 550px; position: absolute; top: 995px; right:-10px; transform: rotate(-5deg);">
 <div class="text" style="width: 150px; line-height: 20px; letter-spacing: 2px; font-size: 28px; position: relative; top:-10px; right: -194px;transform: rotate(-5deg);">© surfing in the <a href="https://www.youtube.com/watch?v=cCrJYMxhuBA&pp=ygUWbmV0d29yayBsb3ZlIHNldmVudGVlbg%3D%3D">interwined</a> since 20241219</div>
 </footer>
       </div>
